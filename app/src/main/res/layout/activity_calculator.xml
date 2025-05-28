@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:text="Kalkulator Sederhana : Leo Fernandy" />
+
+        <EditText
+            android:id="@+id/etnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Nilai Pertama (A)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Nilai Kedua (B)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:text="Tambah" />
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:text="Kali" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:text="Bagi" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            android:text="Hasil" />
+
+        <TextView
+            android:id="@+id/txvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20pt"
+            android:textColor="@color/black"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
